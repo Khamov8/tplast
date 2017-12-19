@@ -1,0 +1,27 @@
+﻿<Window x:Class="projectalpha.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:projectalpha"
+        mc:Ignorable="d"
+        Title="Autorization" Height="350" Width="525">
+    <Grid Background="AliceBlue">
+        <Label Content="Login" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="133,82,0,0" Height="39"/>
+        <Label Content="Password" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123,126,0,0" RenderTransformOrigin="0.45,-0.284" Height="28"/>
+        <TextBox x:Name="textBoxUser" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="202,82,0,0"/>
+        <PasswordBox x:Name="passBoxPwd" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="202,126,0,0" Width="120" Height="23" RenderTransformOrigin="0.205,2.422"/>
+        <Button Content="Log in" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="202,166,0,0" Click="Login_Click" FontStyle="Normal" FontSize="12" Background="WhiteSmoke"/>
+        <Button Content="Exit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="403,37,0,0" Click="Exit_Click" FontStyle="Normal" FontSize="12" Background="WhiteSmoke"/>
+        <Button Content="Forgot password?" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="202,203,0,0" Click="Forgotpassword_Click" FontStyle="Normal" FontSize="12" Background="WhiteSmoke"/>
+        <Button Content="Registration" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="37,37,0,0" Click="Registration_Click" FontStyle="Normal" FontSize="12" Background="WhiteSmoke"/>
+        <DataGrid Margin="10,235,10,0" Name="dtGrid" ItemsSource="{Binding}"/>
+        <Button Content="Person" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="403,134,0,0" Click="Alphaprocess_Click" Background="Snow"/>
+        
+
+
+
+
+
+    </Grid>
+</Window>

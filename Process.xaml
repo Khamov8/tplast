@@ -1,0 +1,46 @@
+﻿<Window x:Class="projectalpha.Process"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:projectalpha"
+        mc:Ignorable="d"
+        Title="Process" Height="380" Width="360">
+    <Grid  Background="AliceBlue" Margin="0,0,0,-31">
+        <Button x:Name="Сomputation" Content="Сomputation" HorizontalAlignment="Left" VerticalAlignment="Top" Width="92" Margin="126,304,0,0" Height="24" Click="СomputationP_Click" IsEnabled="False"/>
+        <TextBox x:Name="Profit" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="92" Margin="10,26,0,0" PreviewTextInput="textBox_PreviewTextInput" TextChanged="Profit_TextChanged" />
+        <TextBox x:Name="Charges" HorizontalAlignment="Left" Height="24" Margin="250,26,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="92" PreviewTextInput="textBox_PreviewTextInput" TextChanged="Charges_TextChanged" />
+        <Label Content="Profit" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="34,0,0,0"/>
+        <Label Content="Charges" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="265,0,0,0"/>
+        <DataGrid Margin="10,333,10,10" Name="dtGrid" ItemsSource="{Binding}" RenderTransformOrigin="0.502,0.291"/>
+        <TextBox x:Name="YearP" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="92" Margin="10,83,0,0"/>
+        <TextBox x:Name="YearC" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="92" Margin="250,83,0,0"/>
+        <TextBox x:Name="MonthP"  HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="92" Margin="10,142,0,0"/>
+        <TextBox x:Name="MonthC" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="92" Margin="250,142,0,0"/>
+        <Label Content="Year Profit" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="16,57,0,0" Width="77"/>
+        <Label Content="Year Charges" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="250,57,0,0" Width="92"/>
+        <Label Content="Month Profit" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="16,111,0,0"/>
+        <Label Content="Month Charges" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="250,111,0,0"/>
+        <TextBox x:Name="NetIncomeYear" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="92" Margin="125,106,0,0"/>
+        <Label Content="Income Year" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="125,75,0,0" Width="92"/>
+        <TextBox x:Name="NetIncomeMonth" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="92" Margin="125,160,0,0"/>
+        <Label Content="Income  Month" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="126,134,0,0" RenderTransformOrigin="0.479,0.289"/>
+        <TextBox x:Name="WeekP" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="92" Margin="10,196,0,0"/>
+        <Label Content="Week Profit" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="16,170,0,0" Width="77"/>
+        <TextBox x:Name="WeekC" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="92" Margin="250,196,0,0"/>
+        <Label Content="Week Charges" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="250,170,0,0"/>
+        <TextBox x:Name="DayP" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="92" Margin="10,243,0,0"/>
+        <Label Content="Day Profit" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="16,219,0,0"/>
+        <TextBox x:Name="DayC" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="92" Margin="250,243,0,0"/>
+        <Label Content="Day Charges" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="250,219,0,0"/>
+        <TextBox x:Name="IncomeWeek" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="92" Margin="125,209,0,0"/>
+        <Label Content="Income Week" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="125,183,0,0" RenderTransformOrigin="0.495,0.196"/>
+        <TextBox x:Name="IncomeDay" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="91" Margin="126,261,0,0"/>
+        <Label Content="Income Day" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="125,235,0,0"/>
+        <Button x:Name="ClearP" Content="Clear" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="18,288,0,0" Click="ClearP_Click" Background="Snow"/>
+        <Button x:Name="CloseP" Content="Close" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="260,288,0,0" Background="Snow" Click="CloseP_Click" />
+        <Button Content="Enter" HorizontalAlignment="Left" Margin="132,26,0,0" VerticalAlignment="Top" Width="75" Click="EnterP_Click"/>
+
+
+    </Grid>
+</Window>
